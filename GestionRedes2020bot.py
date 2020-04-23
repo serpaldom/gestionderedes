@@ -18,11 +18,11 @@ from scheduler import Scheduler
 
 
 
-
-host = "192.168.102.133"
-TOKEN = "974206712:AAGDX511o85Y2RGZ_Ib_cmVNrrOPiLxY8mE"
-ChatGrupo_id = -429428797
-USER = "GestionRedes2020bot"
+#CAMPOS ELIMINADOS POR SEGURIDAD
+host = ""
+TOKEN = ""
+ChatGrupo_id = 
+USER = ""
 
 bot = telebot.TeleBot(TOKEN)
 
