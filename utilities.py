@@ -16,9 +16,10 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
 
-TOKEN = "974206712:AAGDX511o85Y2RGZ_Ib_cmVNrrOPiLxY8mE"
-ChatGrupo_id = -429428797
-USER = "GestionRedes2020bot"
+#CAMPOS ELIMINADOS POR SEGURIDAD
+TOKEN = ""
+ChatGrupo_id = 
+USER = ""
 
 bot = telebot.TeleBot(TOKEN)
 
