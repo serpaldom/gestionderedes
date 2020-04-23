@@ -1,0 +1,23 @@
+Comando: /running  
+Descripción: Te muestro los procesos en ejecución actualmente en el agente
+
+Comando: /ping 
+Descripción: Realizo una prueba de conexión con el agente
+
+Comando: /programas 
+Descripción: Te muestro información sobre todos los programas instalados en el agente
+
+Comando: /interfaces
+Descripción: Te muestro información relevante sobre las interfaces del agente
+
+Comando: /help o /ayuda
+Descripción: Te muestro información de contacto sobre mi creador
+
+Comando: /MWscan
+Descripción: Realizo un escaneo sobre posibles procesos relacionados con malware o actividades maliciosas
+
+Comando: /menu
+Descripción: Muestro un menú gráfico de los comandos disponibles compuesto de botones
+
+Comando: /comandos o /commands
+Descripción: Te comentaré cuales son mis comandos disponibles para que puedas jugar conmigo :)

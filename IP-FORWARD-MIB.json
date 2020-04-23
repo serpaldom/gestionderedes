@@ -1,0 +1,362 @@
+[
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.15",
+    "NAME": "ipCidrRouteMetric5",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipCidrRouteProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.8",
+    "NAME": "ipForwardAge",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The number of seconds since this route was last updated or otherwise determined to be correct. Note that no semantics of `too old' can be implied except through knowledge of the routing protocol by which the route was learned."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24",
+    "NAME": "ipForward",
+    "TYPE": "9609190000Z\"     -- THU SEP 26 16:34:47 PDT 1996",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "Fred Baker Postal: Cisco Systems 519 Lado Drive Santa Barbara, California 93111 Phone: +1 805 681 0115 Email: fred@cisco.com"
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.6",
+    "NAME": "ipCidrRouteType",
+    "TYPE": "INTEGER",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The type of route. Note that local(3) refers to a route for which the next hop is the final destination; remote(4) refers to a route for which the next hop is not the final destination. Routes which do not result in traffic forwarding or rejection should not be displayed even if the implementation keeps them stored internally. reject (2) refers to a route which, if matched, discards the message as unreachable. This is used in some protocols as a means of correctly aggregating routes."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.3",
+    "NAME": "ipCidrRouteTos",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The policy specifier is the IP TOS Field. The encoding of IP TOS is as specified by the following convention. Zero indicates the default path if no more specific policy applies. +-----+-----+-----+-----+-----+-----+-----+-----+ | | | | | PRECEDENCE | TYPE OF SERVICE | 0 | | | | | +-----+-----+-----+-----+-----+-----+-----+-----+ IP TOS IP TOS Field Policy Field Policy Contents Code Contents Code 0 0 0 0 ==> 0 0 0 0 1 ==> 2 0 0 1 0 ==> 4 0 0 1 1 ==> 6 0 1 0 0 ==> 8 0 1 0 1 ==> 10 0 1 1 0 ==> 12 0 1 1 1 ==> 14 1 0 0 0 ==> 16 1 0 0 1 ==> 18 1 0 1 0 ==> 20 1 0 1 1 ==> 22 1 1 0 0 ==> 24 1 1 0 1 ==> 26 1 1 1 0 ==> 28 1 1 1 1 ==> 30"
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4",
+    "NAME": "ipCidrRouteTable",
+    "TYPE": "SEQUENCE OF IPCIDRROUTEENTRY",
+    "PERMISSION": "NOT-ACCESSIBLE",
+    "DESCRIPTION": "This entity's IP Routing table."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.16",
+    "NAME": "ipCidrRouteStatus",
+    "TYPE": "INTEGER",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The row status variable, used according to row installation and removal conventions."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.7",
+    "NAME": "ipCidrRouteProto",
+    "TYPE": "INTEGER",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The routing mechanism via which this route was learned. Inclusion of values for gateway routing protocols is not intended to imply that hosts should support those protocols."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.3",
+    "NAME": "ipCidrRouteNumber",
+    "TYPE": "GAUGE32",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The number of current ipCidrRouteTable entries that are not invalid."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.8",
+    "NAME": "ipCidrRouteAge",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The number of seconds since this route was last updated or otherwise determined to be correct. Note that no semantics of `too old' can be implied except through knowledge of the routing protocol by which the route was learned."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.4",
+    "NAME": "ipCidrRouteNextHop",
+    "TYPE": "IPADDRESS",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "On remote routes, the address of the next system en route; Otherwise, 0.0.0.0."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.5.2",
+    "NAME": "ipForwardCompliances",
+    "TYPE": "OBJECT IDENTIFIER",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": ""
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.14",
+    "NAME": "ipCidrRouteMetric4",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipCidrRouteProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.13",
+    "NAME": "ipCidrRouteMetric3",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipCidrRouteProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.12",
+    "NAME": "ipCidrRouteMetric2",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipCidrRouteProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.11",
+    "NAME": "ipCidrRouteMetric1",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The primary routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipCidrRouteProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.2",
+    "NAME": "ipCidrRouteMask",
+    "TYPE": "IPADDRESS",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "Indicate the mask to be logical-ANDed with the destination address before being compared to the value in the ipCidrRouteDest field. For those systems that do not support arbitrary subnet masks, an agent constructs the value of the ipCidrRouteMask by reference to the IP Address Class. Any assignment (implicit or otherwise) of an instance of this object to a value x must be rejected if the bitwise logical-AND of x with the value of the corresponding instance of the ipCidrRouteDest object is not equal to ipCidrRouteDest."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.9",
+    "NAME": "ipCidrRouteInfo",
+    "TYPE": "OBJECT IDENTIFIER",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "A reference to MIB definitions specific to the particular routing protocol which is responsible for this route, as determined by the value specified in the route's ipCidrRouteProto value. If this information is not present, its value should be set to the OBJECT IDENTIFIER { 0 0 }, which is a syntactically valid object identifier, and any implementation conforming to ASN.1 and the Basic Encoding Rules must be able to generate and recognize this value."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.5",
+    "NAME": "ipCidrRouteIfIndex",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The ifIndex value which identifies the local interface through which the next hop of this route should be reached."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1",
+    "NAME": "ipCidrRouteEntry",
+    "TYPE": "SEQUENCE",
+    "PERMISSION": "NOT-ACCESSIBLE",
+    "DESCRIPTION": "A particular route to a particular destination, under a particular policy."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.1",
+    "NAME": "ipCidrRouteDest",
+    "TYPE": "IPADDRESS",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The destination IP address of this route. This object may not take a Multicast (Class D) address value. Any assignment (implicit or otherwise) of an instance of this object to a value x must be rejected if the bitwise logical-AND of x with the value of the corresponding instance of the ipCidrRouteMask object is not equal to x."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.4.1.10",
+    "NAME": "ipCidrRouteNextHopAS",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The Autonomous System Number of the Next Hop. The semantics of this object are determined by the routing-protocol specified in the route's ipCidrRouteProto value. When this object is unknown or not relevant its value should be set to zero."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.12",
+    "NAME": "ipForwardMetric2",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipForwardProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2",
+    "NAME": "ipForwardTable",
+    "TYPE": "SEQUENCE OF IPFORWARDENTRY",
+    "PERMISSION": "NOT-ACCESSIBLE",
+    "DESCRIPTION": "This entity's IP Routing table."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.7",
+    "NAME": "ipForwardProto",
+    "TYPE": "INTEGER",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The routing mechanism via which this route was learned. Inclusion of values for gateway routing protocols is not intended to imply that hosts should support those protocols."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.3",
+    "NAME": "ipForwardPolicy",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The general set of conditions that would cause the selection of one multipath route (set of next hops for a given destination) is referred to as 'policy'. Unless the mechanism indicated by ipForwardProto specifies otherwise, the policy specifier is the IP TOS Field. The encoding of IP TOS is as specified by the following convention. Zero indicates the default path if no more specific policy applies. +-----+-----+-----+-----+-----+-----+-----+-----+ | | | | | PRECEDENCE | TYPE OF SERVICE | 0 | | | | | +-----+-----+-----+-----+-----+-----+-----+-----+ IP TOS IP TOS Field Policy Field Policy Contents Code Contents Code 0 0 0 0 ==> 0 0 0 0 1 ==> 2 0 0 1 0 ==> 4 0 0 1 1 ==> 6 0 1 0 0 ==> 8 0 1 0 1 ==> 10 0 1 1 0 ==> 12 0 1 1 1 ==> 14 1 0 0 0 ==> 16 1 0 0 1 ==> 18 1 0 1 0 ==> 20 1 0 1 1 ==> 22 1 1 0 0 ==> 24 1 1 0 1 ==> 26 1 1 1 0 ==> 28 1 1 1 1 ==> 30 Protocols defining 'policy' otherwise must either define a set of values which are valid for this object or must implement an integerinstanced policy table for which this object's value acts as an index."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.5.2.2",
+    "NAME": "ipForwardOldCompliance",
+    "TYPE": "MODULE-COMPLIANCE",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The compliance statement for SNMP entities which implement the ipForward MIB."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.1",
+    "NAME": "ipForwardNumber",
+    "TYPE": "GAUGE32",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The number of current ipForwardTable entries that are not invalid."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.10",
+    "NAME": "ipForwardNextHopAS",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The Autonomous System Number of the Next Hop. When this is unknown or not relevant to the protocol indicated by ipForwardProto, zero."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.4",
+    "NAME": "ipForwardNextHop",
+    "TYPE": "IPADDRESS",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "On remote routes, the address of the next system en route; Otherwise, 0.0.0.0."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.5.1.2",
+    "NAME": "ipForwardMultiPathGroup",
+    "TYPE": "OBJECT-GROUP",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "IP Multipath Route Table."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.15",
+    "NAME": "ipForwardMetric5",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipForwardProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.5.1.3",
+    "NAME": "ipForwardCidrRouteGroup",
+    "TYPE": "OBJECT-GROUP",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The CIDR Route Table."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.13",
+    "NAME": "ipForwardMetric3",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipForwardProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.5.2.1",
+    "NAME": "ipForwardCompliance",
+    "TYPE": "MODULE-COMPLIANCE",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The compliance statement for SNMPv2 entities which implement the ipForward MIB."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.11",
+    "NAME": "ipForwardMetric1",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The primary routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipForwardProto value. If this metric is not used, its value should be set to -1."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.2",
+    "NAME": "ipForwardMask",
+    "TYPE": "IPADDRESS",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "Indicate the mask to be logical-ANDed with the destination address before being compared to the value in the ipForwardDest field. For those systems that do not support arbitrary subnet masks, an agent constructs the value of the ipForwardMask by reference to the IP Address Class. Any assignment (implicit or otherwise) of an instance of this object to a value x must be rejected if the bitwise logical-AND of x with the value of the corresponding instance of the ipForwardDest object is not equal to ipForwardDest."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.9",
+    "NAME": "ipForwardInfo",
+    "TYPE": "OBJECT IDENTIFIER",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "A reference to MIB definitions specific to the particular routing protocol which is responsible for this route, as determined by the value specified in the route's ipForwardProto value. If this information is not present, its value should be set to the OBJECT IDENTIFIER { 0 0 }, which is a syntactically valid object identifier, and any implementation conforming to ASN.1 and the Basic Encoding Rules must be able to generate and recognize this value."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.5",
+    "NAME": "ipForwardIfIndex",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The ifIndex value which identifies the local interface through which the next hop of this route should be reached."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.5.1",
+    "NAME": "ipForwardGroups",
+    "TYPE": "OBJECT IDENTIFIER",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": ""
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1",
+    "NAME": "ipForwardEntry",
+    "TYPE": "SEQUENCE",
+    "PERMISSION": "NOT-ACCESSIBLE",
+    "DESCRIPTION": "A particular route to a particular destination, under a particular policy."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.1",
+    "NAME": "ipForwardDest",
+    "TYPE": "IPADDRESS",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": "The destination IP address of this route. An entry with a value of 0.0.0.0 is considered a default route. This object may not take a Multicast (Class D) address value. Any assignment (implicit or otherwise) of an instance of this object to a value x must be rejected if the bitwise logical-AND of x with the value of the corresponding instance of the ipForwardMask object is not equal to x."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.5",
+    "NAME": "ipForwardConformance",
+    "TYPE": "OBJECT IDENTIFIER",
+    "PERMISSION": "READ-ONLY",
+    "DESCRIPTION": ""
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.6",
+    "NAME": "ipForwardType",
+    "TYPE": "INTEGER",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "The type of route. Note that local(3) refers to a route for which the next hop is the final destination; remote(4) refers to a route for which the next hop is not the final destination. Setting this object to the value invalid(2) has the effect of invalidating the corresponding entry in the ipForwardTable object. That is, it effectively disassociates the destination identified with said entry from the route identified with said entry. It is an implementation-specific matter as to whether the agent removes an invalidated entry from the table. Accordingly, management stations must be prepared to receive tabular information from agents that corresponds to entries not currently in use. Proper interpretation of such entries requires examination of the relevant ipForwardType object."
+  },
+  {
+    "MIB": "IP-FORWARD-MIB",
+    "OID": "1.3.6.1.2.1.4.24.2.1.14",
+    "NAME": "ipForwardMetric4",
+    "TYPE": "INTEGER32",
+    "PERMISSION": "READ-CREATE",
+    "DESCRIPTION": "An alternate routing metric for this route. The semantics of this metric are determined by the routing-protocol specified in the route's ipForwardProto value. If this metric is not used, its value should be set to -1."
+  }
+]
